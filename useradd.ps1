@@ -5,7 +5,7 @@ $filepath = Read-Host -Prompt "csv filepath"
 $users = Import-Csv $filepath
 
 ForEach ($user in $users) {
-    $loginname = $user.username + "@sapb1mm.com"
+    $loginname = $user.username + "@yourdomain.com"
     $fname = $user.firstname
     $lname = $user.lastname
     $uname = $user.username
